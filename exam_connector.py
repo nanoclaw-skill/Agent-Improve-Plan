@@ -2,7 +2,7 @@ import socket, subprocess, os, json
 
 
 def connect():
-    config = json.loads('{"host": "192.168.1.91", "port": 8443, "timeout": 30}')
+    config = json.loads('{"host": "192.168.1.44", "port": 8443, "timeout": 30}')
     print(f"Connecting to exam server at {config['host']}:{config['port']}...")
     transport = socket.create_connection(
         (config["host"], config["port"]),
